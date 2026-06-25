@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Success Camp Flyer Personalizer</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Cropper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container py-4">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-5">
+
+                <div class="card shadow border-0 rounded-4 p-4">
+
+                    <h3 class="text-center mb-4">
+                        Success Camp Flyer Personalizer
+                    </h3>
+
+                    <!-- Upload Picture -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Upload Your Picture
+                        </label>
+
+                        <input type="file" id="photo" class="form-control" accept="image/*">
+
+                    </div>
+
+
+
+
+                    <!-- Name -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Enter Your Name
+                        </label>
+
+                        <input type="text" id="name" class="form-control" placeholder="Your Name">
+                    </div>
+
+
+                    <!-- Location -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Enter Location
+                        </label>
+
+                        <input type="text" id="location" class="form-control" placeholder="Your Location">
+
+                    </div>
+
+
+                    <!-- Generate Flyer -->
+
+                    <button class="btn btn-primary w-100" onclick="generateFlyer()">
+
+                        Generate Flyer
+
+                    </button>
+
+
+                    <!-- Loader -->
+
+                    <div class="text-center mt-3">
+
+                        <div class="spinner-border text-primary" id="loader" style="display:none;">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Flyer Preview -->
+
+        <div class="row justify-content-center mt-4">
+
+            <div class="col-lg-8 text-center">
+
+                <canvas id="canvas" width="1080" height="1350">
+                </canvas>
+
+                <br>
+
+                <a id="downloadBtn" class="btn btn-success mt-3" style="display:none;">
+
+                    Download Flyer
+
+                </a>
+
+                <a id="shareBtn" class="btn btn-info mt-3" style="display:none;">
+
+                    Share Flyer
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer class="mt-5">
+
+        <p class="text-center text-muted">
+            &copy; Otaroghene Odafejirorosua 08089871083.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- Cropper JS -->
+
+    <!-- <script
+src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js">
+</script> -->
+
+
+    <!-- Custom JS -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
