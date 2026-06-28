@@ -300,7 +300,7 @@ function wrapText(
             console.log(error);
         }
 
-    }, "image/png");
+    }, "image/jpg");
 
 });
 }
