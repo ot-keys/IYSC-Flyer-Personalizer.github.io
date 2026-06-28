@@ -14,7 +14,7 @@ let croppedImage = null;
 // =====================
 
 const bg = new Image();
-bg.src = "flyer.png";
+bg.src = "flyer.jpg";
 
 bg.onload = () => {
     ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
